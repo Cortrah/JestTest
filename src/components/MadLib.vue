@@ -25,53 +25,85 @@
         ===================================================================
     -->
 
-    <div id="app">
-        Show this question group when
-        <el-dropdown>
+  <div id="madLib">
+    Show this question group when
+    <el-dropdown>
       <span class="el-dropdown-link">
         <i class="el-icon-arrow-down el-icon--right"></i>
       </span>
+      <el-dropdown-menu slot="dropdown">
+        <el-dropdown-item>And</el-dropdown-item>
+        <el-dropdown-item>Or</el-dropdown-item>
+        <el-dropdown-item>Remove</el-dropdown-item>
+      </el-dropdown-menu>
+    </el-dropdown>
+    <span style="background-color:#FFFFFF">
+      the question
+      <el-dropdown>
+        <span class="el-dropdown-link">Internal Title</span>
         <el-dropdown-menu slot="dropdown">
-            <el-dropdown-item>And</el-dropdown-item>
-            <el-dropdown-item>Or</el-dropdown-item>
-            <el-dropdown-item>Remove</el-dropdown-item>
+          <el-dropdown-item>Dogs and Frogs and Polywogs</el-dropdown-item>
+          <el-dropdown-item>Arsenic and Old Lace</el-dropdown-item>
         </el-dropdown-menu>
-    </el-dropdown>
-    <span style="background-color:#FFFFCC">
-    the question
-    <el-dropdown>
-      <span class="el-dropdown-link">Internal Title</span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>Dogs and Frogs and Polywogs</el-dropdown-item>
-        <el-dropdown-item>Arsenic and Old Lace</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
-    of
-    <el-dropdown>
-      <span class="el-dropdown-link">Page 3</span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>Page 1</el-dropdown-item>
-        <el-dropdown-item>Page 2</el-dropdown-item>
-        <el-dropdown-item>Page 3</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
-    has answer choice
-    <el-dropdown>
-      <span class="el-dropdown-link">yes</span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>No</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
-    or
-    <el-dropdown>
-      <span class="el-dropdown-link">maybe</span>
-      <el-dropdown-menu slot="dropdown">
-        <el-dropdown-item>Yes</el-dropdown-item>
-        <el-dropdown-item>No</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>
+      </el-dropdown>
+      of
+      <el-dropdown>
+        <span class="el-dropdown-link">Page 3</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Page 1</el-dropdown-item>
+          <el-dropdown-item>Page 2</el-dropdown-item>
+          <el-dropdown-item>Page 3</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      has answer choice
+      <el-dropdown>
+        <span class="el-dropdown-link">yes</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>No</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      or
+      <el-dropdown>
+        <span class="el-dropdown-link">maybe</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Yes</el-dropdown-item>
+          <el-dropdown-item>No</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+            the question
+      <el-dropdown>
+        <span class="el-dropdown-link">Internal Title</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Dogs and Frogs and Polywogs</el-dropdown-item>
+          <el-dropdown-item>Arsenic and Old Lace</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      of
+      <el-dropdown>
+        <span class="el-dropdown-link">Page 3</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Page 1</el-dropdown-item>
+          <el-dropdown-item>Page 2</el-dropdown-item>
+          <el-dropdown-item>Page 3</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      has answer choice
+      <el-dropdown>
+        <span class="el-dropdown-link">yes</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>No</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
+      or
+      <el-dropdown>
+        <span class="el-dropdown-link">maybe</span>
+        <el-dropdown-menu slot="dropdown">
+          <el-dropdown-item>Yes</el-dropdown-item>
+          <el-dropdown-item>No</el-dropdown-item>
+        </el-dropdown-menu>
+      </el-dropdown>
     </span>
-    </div>
+  </div>
 </template>
 
 <script>
@@ -81,10 +113,16 @@
 </script>
 
 <style scoped>
+    #madLib{
+      max-width:400px;
+      text-align: left;
+    }
+
     .el-dropdown-link {
         cursor: pointer;
         text-decoration: underline;
     }
+
     .el-icon-arrow-down {
         font-size: 12px;
     }
